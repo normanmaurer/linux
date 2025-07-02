@@ -213,7 +213,7 @@ void __user *io_buffer_select(struct io_kiocb *req, size_t *len,
 }
 
 /* cap it at a reasonable 256, will be one page even for 4K */
-#define PEEK_MAX_IMPORT		256
+#define PEEK_MAX_IMPORT		4
 
 static int io_ring_buffers_peek(struct io_kiocb *req, struct buf_sel_arg *arg,
 				struct io_buffer_list *bl)
